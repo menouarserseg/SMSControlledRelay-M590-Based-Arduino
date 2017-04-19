@@ -1,0 +1,7 @@
+﻿I bought this module at AliExpress, which was a little big but it did the job.
+I took some time trying to figure out what does each Pin represent after some tries I found it and I have drew all the connections in the picture attached. This module based on Neo M590 needs a 4.7v power source so you might consider using a voltage drop-down module or you can use directly 5v from arduino but you will have to change it later to save your chip from damage. I actually used a 1N4007 diode that drops 0.7v from the 5v source.
+You will notice that I rexecuted the same commands two times after 2 seconds each, that's because of the quality of the model which is the first version, it did the job anyway.
+The led on pin 11 lights turns off when the model is ready. 
+The device will wait for a call after start listening for sms messages, when you send "open" on a sms to the sim card, it will set on the LED in pin 10 and the same for the relay model in pin 7.
+To turn off you can send "close".
+After both operations the model will call you as a confirmation of the reception of the command, you can change your phone number by changing number on "atd0664133630;" in all lines.
